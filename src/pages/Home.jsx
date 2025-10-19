@@ -7,7 +7,7 @@ function Home() {
 
   useEffect(() => {
     fetch("http://localhost:4000/movies")
-      .then(r => r.json())
+      .then(res => res.json())
       .then(setMovies)
       .catch(console.error);
   }, []);
